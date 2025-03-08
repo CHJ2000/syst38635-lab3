@@ -1,0 +1,18 @@
+name: Lab3 Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: A one line command
+      run: echo I love Web Design!
+    - name: A multi line command
+      run: | 
+        echo My name is Carter Jeffery
+        echo I am in my 5th Semester at Sheridan
